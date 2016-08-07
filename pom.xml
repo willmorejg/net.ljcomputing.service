@@ -4,7 +4,7 @@
 
  <groupId>net.ljcomputing</groupId>
  <artifactId>service</artifactId>
- <version>1.0.1-SNAPSHOT</version>
+ <version>1.0.2-SNAPSHOT</version>
 
  <name>LJ Computing - Service</name>
  <description>LJ Computing Service</description>
