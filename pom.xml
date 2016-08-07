@@ -19,7 +19,7 @@
 
   <net.ljcomputing.utility.version>utility-1.0.0</net.ljcomputing.utility.version>
   <net.ljcomputing.model.version>model-1.0.0</net.ljcomputing.model.version>
-  <net.ljcomputing.persistence.version>persistence-1.0.0</net.ljcomputing.persistence.version>
+  <net.ljcomputing.persistence.version>persistence-1.0.1</net.ljcomputing.persistence.version>
   <derby.version>10.12.1.1</derby.version>
   <commons-dbcp2.version>2.0.1</commons-dbcp2.version>
   <commons-lang3.version>3.4</commons-lang3.version>
