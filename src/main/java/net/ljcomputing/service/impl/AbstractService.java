@@ -36,12 +36,14 @@ import java.util.List;
  */
 public abstract class AbstractService<T extends Model, R extends ModelRepository<T>>
     implements ModelService<T, R> {
+  
+  /** SFL4J. */
   @SuppressWarnings("unused")
   private final static Logger LOGGER = LoggerFactory
       .getLogger(AbstractService.class);
 
   /** The repository. */
-  protected R repository;
+  protected transient R repository;
 
   /**
    * Instantiates a new abstract service.
@@ -60,7 +62,7 @@ public abstract class AbstractService<T extends Model, R extends ModelRepository
    * @throws ServiceException the service exception
    */
   @SuppressWarnings("unchecked")
-  void initRepository() throws ServiceException {
+  protected void initRepository() throws ServiceException {
     final ParameterizedType pt = (ParameterizedType) getClass()
         .getGenericSuperclass();
 

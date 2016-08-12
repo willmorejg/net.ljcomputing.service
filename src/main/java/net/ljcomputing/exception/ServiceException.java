@@ -31,6 +31,7 @@ public class ServiceException extends Exception {
    * Instantiates a new service exception.
    */
   public ServiceException() {
+    super();
   }
 
   /**
@@ -47,7 +48,7 @@ public class ServiceException extends Exception {
    *
    * @param cause the cause
    */
-  public ServiceException(Throwable cause) {
+  public ServiceException(final Throwable cause) {
     super(cause);
   }
 
@@ -57,7 +58,7 @@ public class ServiceException extends Exception {
    * @param message the message
    * @param cause the cause
    */
-  public ServiceException(String message, Throwable cause) {
+  public ServiceException(final String message, final Throwable cause) {
     super(message, cause);
   }
 
@@ -66,11 +67,11 @@ public class ServiceException extends Exception {
    *
    * @param message the message
    * @param cause the cause
-   * @param enableSuppression the enable suppression
-   * @param writableStackTrace the writable stack trace
+   * @param suppress the suppress
+   * @param stackTrace the stack trace
    */
-  public ServiceException(String message, Throwable cause,
-      boolean enableSuppression, boolean writableStackTrace) {
-    super(message, cause, enableSuppression, writableStackTrace);
+  public ServiceException(final String message, final Throwable cause,
+      final boolean suppress, final boolean stackTrace) {
+    super(message, cause, suppress, stackTrace);
   }
 }
